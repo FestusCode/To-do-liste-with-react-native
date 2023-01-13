@@ -3,17 +3,20 @@ import React from "react";
 import Task from "./components/task";
 import AppStyle from "./styles/App.style";
 import Input from "./components/Input";
-// import Main from "./containers/App/Main";
+import Button from "./components/button";
 
 const App = () => {
   return (
     <View style={AppStyle.BlockPage}>
-      <Text style={AppStyle.Title}> THIS DAY TASK'S</Text>
-      <Task taskText="SPRAY PERFUME" />
-      <Task taskText="DRINK WATER" />
-      <Task taskText="EAT PIZZA" />
-      <View>
-        <Input/>
+      <View style={AppStyle.Top}>
+        <Text style={AppStyle.Title}> THIS DAY TASK'S</Text>
+        <Task taskText="SPRAY PERFUME" />
+        <Task taskText="DRINK WATER" />
+        <Task taskText="EAT PIZZA" />
+      </View>
+      <View style={AppStyle.input}>
+        <Input />
+        <Button />
       </View>
     </View>
   );

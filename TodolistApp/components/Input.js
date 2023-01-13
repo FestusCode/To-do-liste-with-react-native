@@ -3,9 +3,12 @@ import React from "react";
 import inputStyle from "./input.style.js";
 const Input = () => {
   return (
-      <View style={inputStyle.container}>
-          <Text style={inputStyle.test}> hello </Text>
-      <TextInput style={inputStyle.field} />
+    <View style={inputStyle.container}>
+      <Text style={inputStyle.test}> Write your daily tasks</Text>
+      <TextInput
+        style={inputStyle.field}
+        placeholder="Enter Your Note"
+      />
     </View>
   );
 };
